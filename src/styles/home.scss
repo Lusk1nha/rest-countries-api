@@ -1,0 +1,46 @@
+@import './mixins';
+@import './colors';
+
+.home {
+  background-color: $light-background;
+
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 0 3rem;
+
+  @include tablet {
+    max-width: 800px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
+
+  @include large-desktop {
+    max-width: unset;
+  }
+}
+
+.search-countries-container {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  margin-bottom: 4rem;
+
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+  }
+}
