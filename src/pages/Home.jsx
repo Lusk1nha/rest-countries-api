@@ -14,9 +14,13 @@ export function Home() {
   const [region, setRegion] = useState('')
   const [selectedCountries, setSelectedCountries] = useState(countries)
 
+  const handleSubmit = event => {
+    event.preventDefault()
+  }
+
   return (
     <main className="home">
-      <form className="search-countries-container">
+      <form className="search-countries-container" onSubmit={handleSubmit}>
         <SearchCountry countries={{countries, setSelectedCountries}} region={region} />
         <RegionSelect countries={{countries, setSelectedCountries}} />
       </form>

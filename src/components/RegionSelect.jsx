@@ -1,6 +1,3 @@
-import '../styles/Region-select/region-select.scss';
-
-
 export function RegionSelect(props) {
   const {countries, setSelectedCountries} = props
 

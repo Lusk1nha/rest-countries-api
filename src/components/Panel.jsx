@@ -1,8 +1,8 @@
-import '../styles/Country/country.scss';
+import '../styles/Panel/panel.scss';
 
 import { useHistory } from 'react-router-dom';
 
-export function Country(props) {
+export function Panel(props) {
   const history = useHistory()
   const openCountry = () => history.push(`/country/${props.information.name}`)
 

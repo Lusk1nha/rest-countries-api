@@ -1,6 +1,5 @@
-import { Country } from './Country';
+import { Panel } from './Panel';
 
-import '../styles/Countries-render/countries-render.scss';
 import { useEffect, useState } from 'react';
 
 export function CountriesRender(props) {
@@ -14,7 +13,7 @@ export function CountriesRender(props) {
   return (
     <section className="countries-container">
       {Object.keys(value).map((index, key) => {
-        return <Country information={value[index]} index={index} key={key} />
+        return <Panel information={value[index]} index={index} key={key} />
       })}
     </section>
   );

@@ -2,8 +2,6 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import searchIcon from '../assets/search.png';
 
-import '../styles/Search-input/search-input.scss';
-
 export function SearchCountry(props) {
   const [value, setValue] = useState('')
   const {countries, setSelectedCountries} = props.countries

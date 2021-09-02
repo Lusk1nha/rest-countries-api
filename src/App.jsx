@@ -3,9 +3,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { CountryContextProvider } from './contexts/CountryContext';
 
 import { Home } from './pages/Home';
-import { Info } from './pages/Info';
+import { Country } from './pages/Country';
 
-import './styles/navbar.scss';
+import './styles/app.scss';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <CountryContextProvider>
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/country/:name" exact component={Info} />
+            <Route path="/country/:name" component={Country} />
           </Switch>
         </CountryContextProvider>
       </BrowserRouter>

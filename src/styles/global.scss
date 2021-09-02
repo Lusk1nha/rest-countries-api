@@ -1,3 +1,5 @@
+@import './colors';
+
 * {
   box-sizing: border-box;
 
@@ -7,3 +9,10 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+body {
+  background-color: $light-background;
+
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
